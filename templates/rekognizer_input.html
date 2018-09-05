@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<form action="/rekognizer" method="post">
+	<table>
+		<tr>
+			<td>Please enter the full path of the image file: </td>
+		</tr>
+		<tr><td>
+		<input type="text" name="file_name" value="file_name" />
+		</td></tr>
+		<tr><td>
+		<p><input type="submit" value="Do it!" /></p>
+		</td></tr>
+	</table>
+</form>
+{% endblock %}
+
