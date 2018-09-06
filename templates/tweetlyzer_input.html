@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<form action="/tweetlyzer" method="post">
+	<table>
+		<tr>
+			<td>Enter Topic / Hash Tag: </td>
+		</tr>
+		<tr><td>
+		<input type="text" name="search_term" value="" />
+		</td></tr>
+		<tr>
+			<td>How many tweets to analyze: </td>
+		</tr>
+		<tr><td>
+		<input type="text" name="no_of_tweets" value="100" />
+		</td></tr>
+		<tr><td>
+		<p><input type="submit" value="Do it!" /></p>
+		</td></tr>
+	</table>
+</form>
+{% endblock %}
+
